@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     background-color: #171717;
+    
 }
 
 
@@ -10,12 +11,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 24px auto;
+    margin: 0 auto;
     height: 80px;
-    width: 80%;
-    
-    border-radius: 10px;
-    border: 2px solid white;
+    width: 100%;
+    border-bottom: 2px solid white;
     text-align: center; /* add text-align center to center the middle element */
     
 }
@@ -33,7 +32,6 @@ nav li {
 nav a {
     color: #fff;
     text-decoration: none;
-    
 }
 
 .nav-menu {
@@ -75,7 +73,8 @@ nav a {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin: 3%;
+    padding: 0;
+    margin: 0 6%;
     
 }
 @media only screen and (max-width: 768px) {
@@ -136,6 +135,8 @@ nav a {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    
+
 }
   
 .nav-link:hover{
@@ -146,25 +147,47 @@ nav a {
 
 
 .nav-icon {
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    padding: 0 10px;
+    
+}
+
+#icon1 {
+    background-image: url("assets/github.svg");
+    background-size: cover;
+}
+#icon2 {
+    background-image: url("assets/linkedin.png");
+    background-size: cover;
+}
+#icon3 {
+    background-image: url("assets/mail.png");
+    background-size: cover;
+}
+
+
+
+.nav-pfp {
+    height: 60px;
+    width: 60px;
 }
 
 .image {
     width: 33%;
     display: flex;
     justify-content: flex-start;
-    text-decoration: none;
-    list-style-type: none;
-    margin: 3%;
-    font-size: medium;
+    align-items: center;
+    margin: 2%;
 }
 
 .hero-container {
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
-    padding: 60px 0;
+    
+    
+    padding: 80px 0;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
@@ -190,8 +213,8 @@ nav a {
 }
 
 .hero-image {
-    height: 200px;
-    width: 500px;
+    border-radius: 10px;
+    
 }
 
 .hero-title {
@@ -205,16 +228,18 @@ nav a {
 }
 
 .hero-subtext {
-    font-size: 18px;
+    font-size: 16px;
     color: white;
-    padding: 16px 0;
-    font-family: system-ui, sans-serif;
+    padding: 8px 0;
+    font-family: "articulat-cf", system-ui, sans-serif;
+    font-weight: 900;
+    letter-spacing: 12.3px;
 }
 
 .ios-container {
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    width: 90%;
     height: 600px;
     padding: 60px 0;
     margin: 0 auto;
