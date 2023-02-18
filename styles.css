@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     background-color: #171717;
-    
+   
 }
 
 
@@ -11,14 +11,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
     height: 80px;
     width: 100%;
     border-bottom: 2px solid white;
-    text-align: center; /* add text-align center to center the middle element */
-    
+    text-align: center;
+    overflow: hidden;
 }
+
+
+.current {
   
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-bottom: 5px;
+}
+
+
 nav ul {
     margin: 0;
     padding: 0;
@@ -74,9 +81,10 @@ nav a {
     justify-content: flex-end;
     align-items: center;
     padding: 0;
-    margin: 0 6%;
+    margin: 0 20px;
     
 }
+
 @media only screen and (max-width: 768px) {
     .nav-menu {
         position: fixed;
@@ -143,13 +151,10 @@ nav a {
     color: #482ff7;
 }
 
-  
-
-
 .nav-icon {
     height: 30px;
     width: 30px;
-    margin: 5px;
+    margin: 10px;
     padding: 0 10px;
     
 }
@@ -172,21 +177,14 @@ nav a {
 .nav-pfp {
     height: 60px;
     width: 60px;
+    margin: 20px;
 }
 
-.image {
-    width: 33%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 2%;
-}
+
 
 .hero-container {
     display: flex;
     flex-wrap: wrap;
-    
-    
     padding: 80px 0;
     margin: 0 auto;
     align-items: center;
@@ -203,18 +201,13 @@ nav a {
     margin: 16px;
 }
 
-.right-hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 500px;
-    height: 250px;
-    margin: 16px;
-}
+
 
 .hero-image {
-    border-radius: 10px;
-    
+    border-radius: 20px;
+    max-width: 500px;
+    height: 300px;
+    margin: 32px 24px;
 }
 
 .hero-title {
@@ -233,13 +226,12 @@ nav a {
     padding: 8px 0;
     font-family: "articulat-cf", system-ui, sans-serif;
     font-weight: 900;
-    letter-spacing: 12.3px;
+    letter-spacing: 12px;
 }
 
 .ios-container {
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
     height: 600px;
     padding: 60px 0;
     margin: 0 auto;
