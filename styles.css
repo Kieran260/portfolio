@@ -1,5 +1,6 @@
 * {
-    border: 2px solid red;
+    
+    background-color: #2345a7;
 }
 
 
@@ -10,10 +11,11 @@ nav {
     margin: 24px auto;
     height: 80px;
     width: 80%;
-    background-color: #333;
+    
     border-radius: 10px;
-    border: 2px solid red;
+    border: 2px solid white;
     text-align: center; /* add text-align center to center the middle element */
+    
 }
   
 nav ul {
@@ -29,14 +31,10 @@ nav li {
 nav a {
     color: #fff;
     text-decoration: none;
-    padding: 10px;
+    
 }
   
-.content {
-    padding-top: 70px;
-    width: 80%;
-    margin: 0 auto;
-}
+
   
   
 .middle-links {
@@ -44,6 +42,8 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: large;
+    padding: 10px;
 }
   
 .right-links {
@@ -51,6 +51,13 @@ nav a {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin: 3%;
+    
+}
+
+.nav-icon {
+    height: 25px;
+    width: 25px;
 }
 
 .image {
@@ -58,6 +65,74 @@ nav a {
     display: flex;
     justify-content: flex-start;
     text-decoration: none;
-    list-style-type: none
+    list-style-type: none;
+    margin: 3%;
+    font-size: medium;
 }
-  
+
+.hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    padding: 60px 0;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 16px;
+}
+
+.right-hero {
+    display: flex;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 16px;
+}
+
+.hero-image {
+    height: 200px;
+    width: 400px;
+}
+
+.hero-title {
+    color: white;
+    font-size: 80px;
+    font-family: Aura, system-ui, sans-serif;
+    text-align: end;
+    line-height: 0.9;
+    letter-spacing: 1px;
+    
+}
+
+.hero-subtext {
+    font-size: 18px;
+    color: white;
+    padding: 16px 0;
+    font-family: system-ui, sans-serif;
+}
+
+.ios-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 600px;
+    padding: 60px 0;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
