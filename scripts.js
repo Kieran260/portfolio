@@ -1,3 +1,5 @@
+/* Navigation bar 'hamburger' dropdown menu */
+
 // Get the HTML elements with the classes "hamburger" and "nav-menu"
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
@@ -25,6 +27,9 @@ function closeMenu() {
 
 
 
+
+/* Navigation bar 'current' page indicator */
+
 // Get all the navigation links
 const navLinks = document.querySelectorAll('.nav-link');
 
@@ -50,3 +55,32 @@ if (fragment) {
     targetLink.classList.add('current');
   }
 }
+
+
+
+
+/* Fade in cards */
+
+// Get the container element
+var cardsContainer = document.querySelector('.cards-container');
+
+// Define the function to check if the element is in view
+function isElementInViewport(el) {
+  var rect = el.getBoundingClientRect();
+  return (
+    rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.8 &&
+    rect.bottom >= 0
+  );
+}
+
+// Define the function to add the fade-in class
+function addFadeInClass() {
+  if (isElementInViewport(cardsContainer)) {
+    cardsContainer.classList.add('fade-in');
+    window.removeEventListener('scroll', addFadeInClass);
+  }
+}
+
+// Add the fade-in class on scroll
+window.addEventListener('scroll', addFadeInClass);
+addFadeInClass();

@@ -1,10 +1,17 @@
-* {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #171717;
    
 }
+
+
+
+* {
+    
+}
+
 
 
 .navbar {
@@ -20,7 +27,6 @@
 
 
 .current {
-  
     border-bottom: 1px solid rgb(255, 255, 255);
     padding-bottom: 5px;
 }
@@ -87,10 +93,10 @@ nav a {
 
 @media only screen and (max-width: 768px) {
     .nav-menu {
-        position: fixed;
+        position: absolute;
         padding: 24px;
         left: -120%;
-        top: 8rem;
+        top: 5rem;
         flex-direction: column;
         background-color: #171717;
         width: 100%;
@@ -152,10 +158,10 @@ nav a {
 }
 
 .nav-icon {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     margin: 10px;
-    padding: 0 10px;
+    
     
 }
 
@@ -220,23 +226,61 @@ nav a {
     
 }
 
-.hero-subtext {
+.subtext {
     font-size: 16px;
     color: white;
     padding: 8px 0;
-    font-family: "articulat-cf", system-ui, sans-serif;
+    font-family: "articulat-cf", Helvetica, sans-serif;
     font-weight: 900;
     letter-spacing: 12px;
 }
 
-.ios-container {
+
+
+
+
+
+/* Projects Container */
+
+.project-container {
+    flex-direction: column;
     display: flex;
     flex-wrap: wrap;
-    height: 600px;
-    padding: 60px 0;
+    padding: 20px 0;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
+    font-family: "articulat-cf", Helvetica, sans-serif;
+    min-height: 100vh;
+    line-height: 1.4;
+}
+
+.cards-title {
+    font-size: 24px;
+}
+  
+.line {
+    background-color: white;
+    height: 2px;
+    width: 400px;
+}
+  
+
+.cards-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding: 75px 50px; 
+   margin-top: 100px;
+}
+
+.cards-container {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    }
+    
+.cards-container.fade-in {
+    opacity: 1;
 }
 
 
@@ -244,5 +288,103 @@ nav a {
 
 
 
+
+
+@media (max-width: 1048px) {
+    .project-container {
+      min-height: 150vh;
+    }
+}
+
+@media (max-width: 653px) {
+    .project-container {
+      min-height: 200vh;
+    }
+}
+
+
+  
+  .container {
+    background: url("https://images.unsplash.com/photo-1574007557239-acf6863bc375?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.104);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    opacity: 1;
+    margin: 20px;
+  }
+  
+  .container .container__info {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 20%;
+    display: flex;
+    align-items: flex-end;
+    padding: 15px 30px;
+    color: #fff;
+  }
+  
+  .container .container__info span {
+    margin-right: 20px;
+  }
+  
+  .container .container__info i {
+    margin-right: 10px;
+  }
+  
+  .container .container__profile {
+    background-color: #e4f2fd;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -20px;
+    border-radius: 15px;
+  }
+  
+  .container .container__profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-position: center;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .container .container__profile h2 {
+    color: #334454;
+    font-size: 1.2rem;
+  }
+  
+  .container .container__profile p {
+    color: #a1b2bc;
+    font-size: 0.8rem;
+  }
+  
+  .container .container__profile p b {
+    font-style: italic;
+  }
+  
+  .container {
+    transition: transform 0.2s, box-shadow 0.2s, opacity 0.2s;
+  }
+  
+  .container:hover {
+    transform: translateY(-20px) scale(1.1);
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.315);
+    opacity: 1;
+  }
+  
+  
+
+  
 
   
