@@ -54,7 +54,15 @@ if (fragment) {
   if (targetLink) {
     targetLink.classList.add('current');
   }
+} else {
+  // If there's no fragment, check the current URL and add the "current" class to the appropriate link
+  const currentUrl = window.location.href;
+  if (currentUrl.includes('index.html')) {
+    const homeLink = document.querySelector('a[href="index.html"]');
+    homeLink.classList.add('current');
+  }
 }
+
 
 
 
