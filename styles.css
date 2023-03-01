@@ -393,14 +393,11 @@ nav a {
     margin: 20px;
     margin-top: 50px;
   }
-<<<<<<< HEAD
-=======
 
   #card1 {
-    background-image: url('../portfolio/assets/smartclock-thumb.png');
+    background-image: url('../portfolio/assets/smartclock-pic.png');
    
   }
->>>>>>> deb26a2 (Added first project card.)
   
   .card .container__info {
     position: absolute;
@@ -429,11 +426,7 @@ nav a {
     position: absolute;
     right: 0;
     left: 0;
-<<<<<<< HEAD
-    bottom: -20px;
-=======
     bottom: -40px;
->>>>>>> deb26a2 (Added first project card.)
     border-radius: 15px;
   }
   
@@ -452,11 +445,7 @@ nav a {
   }
   
   .card .card-profile p {
-<<<<<<< HEAD
-    color: #a1b2bc;
-=======
     color: #5c5c5c;
->>>>>>> deb26a2 (Added first project card.)
     font-size: 0.8rem;
   }
   
@@ -476,18 +465,11 @@ nav a {
   
   
 
-<<<<<<< HEAD
-=======
 
 
 
 
-  
 
-
-
-
->>>>>>> deb26a2 (Added first project card.)
   /* About container */
 
 .about-section {
@@ -581,11 +563,7 @@ button {
     height: 2px;
   }
   .btn-3:hover{
-<<<<<<< HEAD
-     background: transparent;
-=======
     background: transparent;
->>>>>>> deb26a2 (Added first project card.)
     box-shadow: none;
   }
   .btn-3:hover:before {
